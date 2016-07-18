@@ -1,0 +1,20 @@
+<ion-view view-title="Circular">
+  <ion-content ng-controller="detail">
+    <div class="list card" ng-repeat="data in names" ng-show="data.ID=={{id}}">
+
+  <div class="item item-avatar">
+    <img src="http://odpc3.ddc.moph.go.th/DataCenter/dpc8_km/images/notice.png">
+    <div class="headct">
+    <h2>{{data.head}}</h2>
+    </div>
+  </div>
+
+  <div class="item item-body">
+    <p>
+      {{data.content}}
+    </p>
+  </div>
+
+</div>
+  </ion-content>
+</ion-view>

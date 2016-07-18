@@ -1,0 +1,21 @@
+<ion-view view-title="Home">
+      
+      <ion-content ng-controller="home">
+   <ul>
+    <div class="col">
+    <li ng-repeat="x in names">
+    <a href="#/app/detail/{{x.ID}}">
+      <h2>{{x.head}}</h2>
+     <div class="contentview">
+      <p>{{x.content}}</p>
+     </div>
+     <h6 ng-click="$location.path('#/app/detail/{{x.ID}}')"><u>Read more <i class="ion-arrow-right-c padding-bottom"></i></u></h6>
+
+    </a>
+
+  </li>
+  </div>
+</ul>
+
+      </ion-content>
+</ion-view>
